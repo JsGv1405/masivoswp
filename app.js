@@ -130,7 +130,7 @@ app.post('/send-media', async (req, res) => {
   // const url = req.body.url;
   //const fileUrl = req.body.file;
 
-  const media = MessageMedia.fromFilePath('./pie.jpeg');
+  const media = MessageMedia.fromFilePath('./signal.jpeg');
   // const file = req.files.file;
   // const media = new MessageMedia(file.mimetype, file.data.toString('base64'), file.name);
   let mimetype;
