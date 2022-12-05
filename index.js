@@ -33,6 +33,7 @@ app.get('/', (req, res) => {
   });
 });
 
+
 const client = new Client({
   restartOnAuthFail: true,
   puppeteer: {
@@ -48,7 +49,7 @@ const client = new Client({
       '--disable-gpu'
     ],
   },
- 
+  session: sessionCfg
 });
 
 client.on('message', msg => {
