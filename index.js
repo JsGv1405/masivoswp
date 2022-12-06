@@ -11,7 +11,7 @@ const axios = require('axios');
 const mime = require('mime-types');
 const cors=require('cors');
 
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 3000;
 
 const app = express();
 const server = http.createServer(app);
@@ -49,7 +49,7 @@ const client = new Client({
       '--disable-gpu'
     ],
   },
-  session: sessionCfg
+
 });
 
 client.on('message', msg => {
